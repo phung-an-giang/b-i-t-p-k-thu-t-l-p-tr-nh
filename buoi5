@@ -1,0 +1,24 @@
+import class buoi5;
+
+public class MaxMinTernary {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Nhập hai số nguyên từ người dùng
+        System.out.print("Nhập số nguyên thứ nhất: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Nhập số nguyên thứ hai: ");
+        int num2 = scanner.nextInt();
+
+        // Tìm giá trị lớn nhất bằng toán tử ba ngôi
+        int max = (num1 > num2) ? num1 : num2;
+
+        // Tìm giá trị nhỏ nhất bằng toán tử ba ngôi
+        int min = (num1 < num2) ? num1 : num2;
+
+        // Hiển thị kết quả
+        System.out.println("Giá trị lớn nhất là: " + max);
+        System.out.println("Giá trị nhỏ nhất là: " + min);
+    }
+}
